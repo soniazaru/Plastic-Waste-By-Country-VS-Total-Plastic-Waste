@@ -18,6 +18,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" integrity="sha256-oSgtFCCmHWRPQ/JmR4OoZ3Xke1Pw4v50uh6pLcu+fIc="
         crossorigin="anonymous"></script>
 
+    <!-- link del css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- template di Handlebars -->
+    <script id="card-template" type="text/x-handlebars-template">
+    <div class="col-3 single-state">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ Entity }} {{ Code }}</h4>
+          <p class="card-text">{{ Year }} {{ [Per capita plastic waste (kilograms per person per day)] }}</p>
+        </div>
+      </div>
+    </div>
+    </script>
+
     <meta charset="UTF-8">
 
     <title> Plastic Waste By Country VS Total plastic Waste </title>
@@ -48,6 +63,10 @@
                 </div>
             </div>
             <div class="col-9">
+
+                <!-- <div class="loader"></div> --> 
+
+                <canvas id="totalPlasticWasteByCountry" width="300" height="300"></canvas>
 
             </div>
         </div>

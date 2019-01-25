@@ -41,6 +41,28 @@ $(function () {
                         //console.log(data[i].Plastic);
                     }
                 }
+
+                var TPWBC = document.getElementById("totalPlasticWasteByCountry");
+                var myChart = new Chart(TPWBC, {
+                    type: 'doughnut',
+                    data: {
+                        labels: labels, globalPlastic,
+                        datasets: [
+                            {
+                                label: "Plastic Waste By Country VS Global Plastic",
+                                data: [test, globalPlastic - test],
+                                backgroundColor: ["#29a3a3", "#6666ff"],
+                                hoverBackgroundColor: ["#29a3a3", "#6666ff"],
+                                hoverBorderColor: "rgb(255, 255, 255, 0)",
+                                borderColor: "rgba(255, 255, 255, 0)",
+                            }
+                        ],
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: true,
+                        }
+                    },
+                })
             })
         }
     )

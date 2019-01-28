@@ -51,8 +51,8 @@ $(function () {
                             {
                                 label: "Plastic Waste By Country VS Global Plastic",
                                 data: [test, globalPlastic - test],
-                                backgroundColor: ["#29a3a3", "#6666ff"],
-                                hoverBackgroundColor: ["#29a3a3", "#6666ff"],
+                                backgroundColor: ["#29a3a3", "#122c3c"],
+                                hoverBackgroundColor: ["#29a3a3", "#122c3c"],
                                 hoverBorderColor: "rgb(255, 255, 255, 0)",
                                 borderColor: "rgba(255, 255, 255, 0)",
                             }
